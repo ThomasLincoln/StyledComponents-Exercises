@@ -3,6 +3,7 @@ import GlobalStyle from './styles/GlobalStyle';
 import Botao from './styles/exercicio1';
 import Card from './styles/exercicio2';
 import Input from './styles/exercicio3';
+import AlertComponent from './styles/exercicio4';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <spam>Texto</spam>
       </Card>
       <Input />
+      <AlertComponent type="sucess">opa</AlertComponent>
     </div>
   );
 }
