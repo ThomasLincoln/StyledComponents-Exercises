@@ -1,7 +1,8 @@
 import React from 'react';
 import GlobalStyle from './styles/GlobalStyle';
 import Botao from './styles/exercicio1';
-import Card from './components/exercicio2';
+import Card from './styles/exercicio2';
+import Input from './styles/exercicio3';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Card>
         <spam>Texto</spam>
       </Card>
-      <p />
+      <Input />
     </div>
   );
 }
