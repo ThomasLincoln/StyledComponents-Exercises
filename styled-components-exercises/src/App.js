@@ -1,6 +1,7 @@
 import React from 'react';
 import GlobalStyle from './styles/GlobalStyle';
-import Dropdown from './styles/exercicio8';
+import Modal from './styles/exercicio9';
+// import Dropdown from './styles/exercicio8';
 // import Carrossel from './styles/exercicio7';
 // import ProgressBar from './styles/exercicio6';
 // import NavBar from './styles/exercicio5';
@@ -15,11 +16,14 @@ function App() {
   // 'https://s2.glbimg.com/ypM8D50QTZjwDKGEp0AXf_BHLNM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/J/f/IY697dSgejr3wbPYLA8w/dmc1.jpg',
   // ];
 
-  const options = ['opção 1', 'opção 2', 'opção 3'];
+  // const options = ['opção 1', 'opção 2', 'opção 3'];
   return (
     <div className="App">
       <GlobalStyle />
-      <Dropdown options={options} />
+      <Modal isOpen>
+        <h1>opa</h1>
+      </Modal>
+      {/* <Dropdown options={options} /> */}
       {/* <Carrossel links={links} largura="90" altura="40" /> */}
       {/* <ProgressBar value="80" /> */}
       {/* <NavBar>
