@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import GlobalStyle from './styles/GlobalStyle';
-import Modal from './styles/exercicio9';
+import TimeLine from './styles/exercicio10';
+// import Modal from './styles/exercicio9';
 // import Dropdown from './styles/exercicio8';
 // import Carrossel from './styles/exercicio7';
 // import ProgressBar from './styles/exercicio6';
@@ -17,12 +19,31 @@ function App() {
   // ];
 
   // const options = ['opção 1', 'opção 2', 'opção 3'];
+
+  const objetos = [
+    { title: 'Mario', date: '29/06/2002', description: 'A mario Game' },
+    { title: 'Mario2', date: '30/05/2002', description: 'A mario Game' },
+    { title: 'Mario3', date: '29/04/2002', description: 'A mario Game' },
+    { title: 'Mario3', date: '29/04/2002', description: 'A mario Game' },
+    { title: 'Mario3', date: '29/04/2002', description: 'A mario Game' },
+  ];
+
+  // Função de comparação para ordenar os objetos por data
+  function compareDates(a, b) {
+    const dateA = new Date(a.date.split('/').reverse().join('/'));
+    const dateB = new Date(b.date.split('/').reverse().join('/'));
+
+    return dateA - dateB;
+  }
+  // Ordena os objetos com base na data
+  const objetosOrdenados = objetos.sort(compareDates);
   return (
     <div className="App">
       <GlobalStyle />
-      <Modal isOpen>
-        <h1>opa</h1>
-      </Modal>
+      <TimeLine datas={objetosOrdenados} espacamento="14" />
+      {/* <Modal isOpen> */}
+      {/* <h1>opa</h1> */}
+      {/* </Modal> */}
       {/* <Dropdown options={options} /> */}
       {/* <Carrossel links={links} largura="90" altura="40" /> */}
       {/* <ProgressBar value="80" /> */}
