@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
@@ -22,7 +23,7 @@ function Slider({ min, max, step }) {
   const [value, setValue] = useState(min);
 
   const handleChange = (event) => {
-    const newValue = parseInt(event.target.value);
+    const newValue = parseInt(event.target.value, 10);
     setValue(newValue);
   };
 
