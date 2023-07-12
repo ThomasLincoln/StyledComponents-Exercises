@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import GlobalStyle from './styles/GlobalStyle';
-import TimeLine from './styles/exercicio10';
+import Chart from './styles/exercicio11';
+// import TimeLine from './styles/exercicio10';
 // import Modal from './styles/exercicio9';
 // import Dropdown from './styles/exercicio8';
 // import Carrossel from './styles/exercicio7';
@@ -27,6 +28,13 @@ function App() {
     { title: 'Mario3', date: '29/04/2002', description: 'A mario Game' },
     { title: 'Mario3', date: '29/04/2002', description: 'A mario Game' },
   ];
+  const data = [
+    { label: 'Item 1', value: 10 },
+    { label: 'Item 2', value: 20 },
+    { label: 'Item 3', value: 15 },
+    { label: 'Item 4', value: 8 },
+    { label: 'Item 5', value: 12 },
+  ];
 
   // Função de comparação para ordenar os objetos por data
   function compareDates(a, b) {
@@ -40,7 +48,8 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <TimeLine datas={objetosOrdenados} espacamento="14" />
+      <Chart data={data} />
+      {/* <TimeLine datas={objetosOrdenados} espacamento="14" /> */}
       {/* <Modal isOpen> */}
       {/* <h1>opa</h1> */}
       {/* </Modal> */}
