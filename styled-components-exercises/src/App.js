@@ -1,17 +1,18 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import GlobalStyle from './styles/GlobalStyle';
+import Acordeao from './styles/exercicio12';
 import Chart from './styles/exercicio11';
-// import TimeLine from './styles/exercicio10';
-// import Modal from './styles/exercicio9';
-// import Dropdown from './styles/exercicio8';
-// import Carrossel from './styles/exercicio7';
-// import ProgressBar from './styles/exercicio6';
-// import NavBar from './styles/exercicio5';
-// import Botao from './styles/exercicio1';
-// import Card from './styles/exercicio2';
-// import Input from './styles/exercicio3';
-// import AlertComponent from './styles/exercicio4';
+import TimeLine from './styles/exercicio10';
+import Modal from './styles/exercicio9';
+import Dropdown from './styles/exercicio8';
+import Carrossel from './styles/exercicio7';
+import ProgressBar from './styles/exercicio6';
+import NavBar from './styles/exercicio5';
+import Botao from './styles/exercicio1';
+import Card from './styles/exercicio2';
+import Input from './styles/exercicio3';
+import AlertComponent from './styles/exercicio4';
 
 function App() {
   // const links = [
@@ -48,7 +49,8 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Chart data={data} />
+      <Acordeao />
+      {/* <Chart data={data} /> */}
       {/* <TimeLine datas={objetosOrdenados} espacamento="14" /> */}
       {/* <Modal isOpen> */}
       {/* <h1>opa</h1> */}
