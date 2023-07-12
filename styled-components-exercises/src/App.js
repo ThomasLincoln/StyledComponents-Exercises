@@ -13,6 +13,7 @@ import Botao from './styles/exercicio1';
 import Card from './styles/exercicio2';
 import Input from './styles/exercicio3';
 import AlertComponent from './styles/exercicio4';
+import Slider from './styles/exercicio13';
 
 function App() {
   // const links = [
@@ -49,7 +50,8 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Acordeao />
+      <Slider min="0" max="100" step="10" />
+      {/* <Acordeao /> */}
       {/* <Chart data={data} /> */}
       {/* <TimeLine datas={objetosOrdenados} espacamento="14" /> */}
       {/* <Modal isOpen> */}
