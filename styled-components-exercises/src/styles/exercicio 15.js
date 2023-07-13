@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/media-has-caption */
+/* eslint-disable react/prop-types */
 import React, { useState, useRef } from 'react';
 import styled, { css } from 'styled-components';
 
-function VideoPlayer({ src, title }) {
+function VideoPlayer({ src }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -74,10 +76,6 @@ function VideoPlayer({ src, title }) {
           {isFullScreen ? 'Exit Fullscreen' : 'Fullscreen'}
         </FullscreenButton>
       </Controls>
-      <VideoInfo>
-        <h2>{title}</h2>
-        <p>Additional video information here</p>
-      </VideoInfo>
     </StyledVideoPlayer>
   );
 }
@@ -132,25 +130,6 @@ const Time = styled.div`
 
 const FullscreenButton = styled.button`
   ${ButtonStyles}
-`;
-
-const VideoInfo = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  color: #fff;
-  transition: transform 0.3s;
-
-  h2 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 14px;
-  }
 `;
 
 StyledVideoPlayer.displayName = 'VideoPlayer';
